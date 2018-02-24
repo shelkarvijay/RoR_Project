@@ -1,0 +1,16 @@
+<h2>Login Form</h2>
+<%= form_with scope: :article, local: true do |form| %>
+  <p>
+    <%= form.label :Username %><br>
+    <%= form.text_field :username %>
+  </p>
+ 
+  <p>
+    <%= form.label :Password %><br>
+    <%= form.text_field :password %>
+  </p>
+ 
+  <p>
+    <%= form.submit :"Click Here to Login" %>
+  </p>
+<% end %>
